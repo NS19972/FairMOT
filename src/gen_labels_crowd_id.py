@@ -51,12 +51,12 @@ def gen_labels_crowd(data_root, label_root, ann_root):
 
 
 if __name__ == '__main__':
-    data_val = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/images/val'
-    label_val = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/labels_with_ids/val'
-    ann_val = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/annotation_val.odgt'
-    data_train = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/images/train'
-    label_train = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/labels_with_ids/train'
-    ann_train = '/content/FairMOT/data/yfzhang/MOT/JDE/crowdhuman/annotation_train.odgt'
+    data_val = '/content/FairMOT/dataset/images/val'
+    label_val = 'FairMOT/dataset/labels_with_ids/val'
+    ann_val = '/content/FairMOT/dataset/annotation_val.odgt'
+    data_train = '/content/FairMOT/dataset/images/train'
+    label_train = 'FairMOT/dataset/labels_with_ids/train'
+    ann_train = '/content/FairMOT/dataset/annotation_train.odgt'
     gen_labels_crowd(data_train, label_train, ann_train)
     gen_labels_crowd(data_val, label_val, ann_val)
 
