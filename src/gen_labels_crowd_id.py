@@ -28,6 +28,8 @@ def gen_labels_crowd(data_root, label_root, ann_root):
         print(i)
         image_name = '{}.jpg'.format(ann_data['ID'])
         img_path = os.path.join(data_root, image_name)
+        if not os.path.exists(img_path):
+          continue
         anns = ann_data['gtboxes']
         img = cv2.imread(
             img_path,
